@@ -1,9 +1,9 @@
-
-
 const Home = () => {
   return (
-    <h1>Hello world</h1>
+    <div className="flex">
+      <h1>Hello world</h1>
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;
