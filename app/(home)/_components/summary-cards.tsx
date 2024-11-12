@@ -14,9 +14,10 @@ interface SummaryCardProps {
   depositsTotal: number,
   investmentsTotal: number,
   expensesTotal: number,
+  userCanAddTransaction?: boolean;
 }
 
-const SummaryCards = async ({ balance, depositsTotal, investmentsTotal, expensesTotal } : SummaryCardProps) => {
+const SummaryCards = async ({ balance, depositsTotal, investmentsTotal, expensesTotal, userCanAddTransaction } : SummaryCardProps) => {
   
 
   return (
@@ -27,6 +28,7 @@ const SummaryCards = async ({ balance, depositsTotal, investmentsTotal, expenses
         title="Saldo"
         amount={balance}
         size="large"
+        userCanAddTransaction={userCanAddTransaction}
       />
 
       {/* OUTRO CARDS */}
