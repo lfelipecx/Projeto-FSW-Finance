@@ -9,7 +9,7 @@ const LoginPage = async () => {
     const { userId } = await auth()
 
     if(userId) {
-        redirect("")
+        redirect("/")
     }
     
   return (
